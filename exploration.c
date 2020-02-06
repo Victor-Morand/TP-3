@@ -5,17 +5,17 @@
 
 int main (){
 	
-	int choixDestination;
+	char choixDestination[14];
 	
-	printf ("Saisissez 1 pour aller a Wuhan, 2 pour la Coree du Nord. \n");
-	scanf ("%d" , &choixDestination);
+	printf ("Voulez vous aller a Wuhan ou en Coree ? \n");
+	scanf ("%s" , &choixDestination);
 	
-	if ( choixDestination == 1 ){
-		printf ("Vous avez attrape le coronavirus, bonnes vacances a vous \n");
+	if (strcmp( choixDestination , "Wuhan")==0){
+		printf("test1");
 	}
 	
-	if ( choixDestination == 2 ){
-		printf ("Vous etes bien arrive en Coree du Nord, profitez bien de la dictature. \n");
+	if (strcmp( choixDestination , "Coree")==0){
+		printf("test2");
 	}
 	
 	return 0;
