@@ -3,6 +3,7 @@
 #include <time.h>
 #include <string.h>
 
+
 struct Lieu
 {
 	char nom[10];
